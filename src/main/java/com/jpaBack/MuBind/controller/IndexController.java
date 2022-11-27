@@ -4,6 +4,7 @@ import com.jpaBack.MuBind.config.auth.LoginUser;
 import com.jpaBack.MuBind.config.auth.dto.SessionUser;
 import com.jpaBack.MuBind.service.PostsService;
 import com.jpaBack.MuBind.web.dto.post.PostsResponseDto;
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,21 +23,42 @@ public class IndexController {
 
     //게시판 메인 주소 리턴
     @GetMapping("/")
-    public String index(Model model, @LoginUser SessionUser user) {
-        model.addAttribute("posts", postsService.findAllDesc());
-        if (user != null) {
-            model.addAttribute("userName", user.getName());
-        }
-        return "index";
+    public String home() {
+        return "/views/matching/matchingHome";
     }
+        @GetMapping("/posts")
+        public String index(Model model, @LoginUser SessionUser user) {
+            model.addAttribute("posts", postsService.findAllDesc());
+            if (user != null) {
+                model.addAttribute("userName", user.getName());
+            }
+            return "index";
+
+        }
 
 
     //글 저장시 주소 리턴
 
     @GetMapping("/posts/save")
     public String postsSave() {
+
         return "posts-save";
     }
+
+
+      @GetMapping("/login")
+      public String loginUser(){
+        return "/views/login/loginHome";
+      }
+
+
+//   //글 작성 시 주소 리턴
+//    @GetMapping("/post/write")
+//    public String postWrite(){
+//
+//        return"posts-";
+//    }
+
 
     //글 수정시 주소 리턴
     @GetMapping("/posts/update/{id}")
@@ -46,4 +68,7 @@ public class IndexController {
 
         return "posts-update";
     }
+
+
+
 }

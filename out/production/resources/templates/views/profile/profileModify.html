@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" htype="text/css" href="/css/profile/profileModify.css">
+  <title>프로필 수정</title>
+</head>
+<body>
+    <div class="wrap">
+      <div class="intro_bg">
+        <div class="header">
+          <div class="logo_text">
+            <h2>MUBIND</h2>
+        </div>
+        <ul class="nav">
+          <li><a href="#">MATCHING</a></li>
+          <li><a href="#">POST</a></li>
+          <li><a href="#">PROFILE</a></li>
+          <li><a href="#">LOGIN</a></li>
+        </ul>
+      </div>
+      <div class="wrap_bg">
+      <div class="profile_img">
+        <img src="img/기본프로필.jpeg">
+      </div>
+      <div class="modify_profile">
+        <button type="button">사진 업로드</button>
+      </div>
+      <div class="username">
+        <h2 id="userName">userName</h2>
+      </div>
+      <div class="modify_intro">
+        <input id="modify_intro" placeholder="자기소개 작성"></input>
+      </div>
+      <div class="submit_intro">
+        <button type="button">수정 완료</button>
+      </div>
+      <div class="modify_pw">
+        <input id="modify_pw" type="password" placeholder="변경할 비밀번호 입력">
+        <input id="chk_pw" type="password" placeholder="비밀번호 다시 입력">
+        <button type="button" id="modify_pw_btn">비밀번호 변경</button>
+      </div>
+    </div>
+
+    
+    <h1> 자신의 정보를 체크하세요. </h1>
+    <div class="genre_chk">
+      <h2>선호 장르</h2>
+      <div class="chkbox1">
+      <input type="checkbox" name="check1" onclick="count_check(this);" id="classic"><label for="classic"><span>클래식</span></label>
+      <input type="checkbox" name="check1" onclick="count_check(this);" id="jazz"><label for="jazz"><span>재즈</span></label>
+      <input type="checkbox" name="check1" onclick="count_check(this);" id="hiphop"><label for="hiphop"><span>힙합</span></label>
+      <input type="checkbox" name="check1" onclick="count_check(this);" id="popular-music"><label for="popular-music"><span>대중음악</span></label>
+      <input type="checkbox" name="check1" onclick="count_check(this);" id="rock"><label for="rock"><span>락</span></label>
+      <input type="checkbox" name="check1" onclick="count_check(this);" id="electronic-music"><label for="electronic-music"><span>전자음악</span></label>
+      <input type="checkbox" name="check1" onclick="count_check(this);" id="trot"><label for="trot"><span>트로트</span></label>
+      <input type="checkbox" name="check1" onclick="count_check(this);" id="etc-gerne"><label for="etc-gerne"><span>기타 장르</span></label>
+    </div>
+    </div>
+    <div class="work_chk">
+      <h2>종사 분야</h2>
+      <div class="chkbox2">
+      <input type="checkbox" name="check2" onclick="count_check2(this);" id="composition"><label for="composition"><span>작곡</span></label>
+      <input type="checkbox" name="check2" onclick="count_check2(this);" id="Lyric"><label for="Lyric"><span>작사</span></label>
+      <input type="checkbox" name="check2" onclick="count_check2(this);" id="vocal"><label for="vocal"><span>보컬</span></label>
+      <input type="checkbox" name="check2" onclick="count_check2(this);" id="guitar"><label for="guitar"><span>통기타/일렉기타</span></label>
+      <input type="checkbox" name="check2" onclick="count_check2(this);" id="bass"><label for="bass"><span>베이스</span></label>
+      <input type="checkbox" name="check2" onclick="count_check2(this);" id="drum"><label for="drun"><span>드럼/타악기</span></label>
+      <input type="checkbox" name="check2" onclick="count_check2(this);" id="keyboard"><label for="kdyboard"><span>건반</span></label>
+      <input type="checkbox" name="check2" onclick="count_check2(this);" id="mastering"><label for="mastering"><span>믹싱/마스터링</span></label>
+      <input type="checkbox" name="check2" onclick="count_check2(this);" id="record"><label for="record"><span>음반</span></label>
+      <input type="checkbox" name="check2" onclick="count_check2(this);" id="etc-work"><label for="etc-work"><span>기타 작업</span></label>
+    </div>
+    </div>
+    <div class="footer-btn">
+      <button type="submit" id="match-btn" 
+      onclick="match();">설정 완료</button>
+      <button type="button" id="back-btn">뒤로</button>
+    </div>
+  </div>
+
+  </div>
+</body>
+</html>

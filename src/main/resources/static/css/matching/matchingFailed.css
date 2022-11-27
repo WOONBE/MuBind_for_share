@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap'); /* 폰트 불러오기 */
+
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin:0px;
+  padding:0px;
+  color: #000;
+}
+
+.wrap {
+  position: relative;
+}
+
+.intro_bg{
+  width:100%;
+  height: 1000px;
+  background-image: url(img/background3.jpg);
+  background-attachment: fixed;
+}
+
+.logo_text { z-index: 20; /* header보다 위로 올라오게 함 */
+  width:30%;  height:100px;
+  margin-top: 30px;
+}
+
+.logo_text > h2 {
+  position: fixed;
+  color: rgb(255, 255, 255);
+  font-family: 'Righteous', cursive; font-size: 30px;
+  cursor: pointer;
+
+}
+
+.logo_text > h2:hover {
+  color: rgb(184, 17, 184);
+  transition: 0.3s;
+}
+.logo_text > h2:not(:hover) {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.header{
+  z-index: 10;
+  display: flex;
+  width: 1300px;
+  margin:auto;
+  height: 86px;
+}
+
+.nav {
+  z-index: 10;
+  display: flex;
+  position: fixed;  /* 상단바 고정 */
+  padding-left: 15%;  /* 왼쪽 패딩 조정 */
+  justify-content: flex-end;
+  line-height: 86px;
+  width:calc(1300px - 300px);
+}
+.nav > li{
+  margin-left: 80px;
+}
+.nav > li > a{
+  color : #fff;
+}
+.nav > li > a:hover {
+  color: rgb(178, 122, 178);
+  transition: 0.3s;
+}
+.nav > li > a:not(:hover) {
+  color: #fff;
+  transition: 0.3s;
+}
+
+  .check-text {
+    position: relative;
+    text-align: center; font-size: 40px;
+    width: 600px;height: 100px; background-color: rgb(0, 0, 0);
+    top: 20%;
+    left: 50%;transform: translate(-50%, -50%);
+  }
+  .check-text h2 {
+    color: white;
+  }
+
+  .back-btn {
+    position: absolute; text-align: center;
+    top: 60%;left: 50%;transform: translate(-50%, -50%);
+    width: 300px; height: 100px; background-color: #fff;
+  }
+
+  .back-btn button {
+    width: 150px;
+    height: 70px;
+  }

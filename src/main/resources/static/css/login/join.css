@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap'); /* 폰트 불러오기 */
+
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin:0px;
+  padding:0px;
+  color: #000;
+}
+
+.wrap {
+  position:relative;
+}
+.logo_text {
+  cursor: default;
+  position: relative;
+  top:100px;
+  text-align: center;
+}
+
+.logo_text > h2 {
+  color: rgb(184,17, 184);
+  font-family: 'Righteous', cursive; font-size: 90px;
+}
+
+.set_info {
+  position: relative;
+  width: 500px; height: 500px; left: 50%; top: 150px;
+  transform: translate(-50%);
+}
+
+/* 중복확인 버튼 디자인*/
+#chk_id:hover, #chk_nick:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+
+
+#set_email {
+  position: absolute;
+  text-align: center;
+  top: 11%; left: 50%;   transform: translate(-50%,-50%);}
+#set_id {
+  position: absolute;
+  text-align: center;
+  top: 22%; left: 50%;   transform: translate(-50%,-50%);}
+#chk_id {    
+  height: 30px; width: 70px;
+  position: absolute;
+  text-align: center;
+  top: 22%; left: 15%;   transform: translate(-50%,-50%);
+  border: none; color: rgb(255, 255, 255);
+  background-color: blueviolet; cursor: pointer; }
+#set_pw{   
+  position: absolute;
+  text-align: center;
+  top: 33%; left: 50%;   transform: translate(-50%,-50%);}
+#chk_pw{ 
+  position: absolute;
+  text-align: center;
+  top: 44%; left: 50%;   transform: translate(-50%,-50%);}
+#set_nick{ 
+  position: absolute;
+  text-align: center;
+  top: 55%; left: 50%;   transform: translate(-50%,-50%);}
+#chk_nick{   
+  height: 30px; width: 70px;
+  position: absolute;
+  text-align: center;
+  top: 55%; left: 15%;   transform: translate(-50%,-50%);
+  border: none; color: rgb(255, 255, 255);
+  background-color: blueviolet; cursor: pointer;}
+
+
+#set_email, #set_id, #set_pw, #chk_pw, #set_nick {
+  font-size: 22px;
+  width: 250px;
+  height: 40px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+
+.links {
+  position: absolute;
+  top: 120%; left: 50%; transform: translate(-50%,-50%);
+}
+
+#register_btn, #back_btn {
+  width: 150px;
+  height: 70px;
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 100px;
+}
+#register_btn:hover, #back_btn:hover {
+  background-color: blueviolet;
+  border-color: blueviolet;
+  color: azure;
+}

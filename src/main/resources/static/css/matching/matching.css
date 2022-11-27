@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap'); /* 폰트 불러오기 */
+
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin:0px;
+  padding:0px;
+  color: #000;
+}
+
+.wrap {
+  position: relative;
+}
+
+.intro_bg{
+  width:100%;
+  height: 1000px;
+  background-image: url(img/background3.jpg);
+  background-attachment: fixed;
+}
+
+.logo_text { z-index: 20; /* header보다 위로 올라오게 함 */
+  width:30%;  height:100px;
+  margin-top: 30px;
+}
+
+.logo_text > h2 {
+  position: fixed;
+  color: rgb(255, 255, 255);
+  font-family: 'Righteous', cursive; font-size: 30px;
+  cursor: pointer;
+
+}
+
+.logo_text > h2:hover {
+  color: rgb(184, 17, 184);
+  transition: 0.3s;
+}
+.logo_text > h2:not(:hover) {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.header{
+  z-index: 10;
+  display: flex;
+  width: 1300px;
+  margin:auto;
+  height: 86px;
+}
+
+.nav {
+  z-index: 10;
+  display: flex;
+  position: fixed;  /* 상단바 고정 */
+  padding-left: 15%;  /* 왼쪽 패딩 조정 */
+  justify-content: flex-end;
+  line-height: 86px;
+  width:calc(1300px - 300px);
+}
+.nav > li{
+  margin-left: 80px;
+}
+.nav > li > a{
+  color : #fff;
+}
+.nav > li > a:hover {
+  color: rgb(178, 122, 178);
+  transition: 0.3s;
+}
+.nav > li > a:not(:hover) {
+  color: #fff;
+  transition: 0.3s;
+}
+
+h2 {
+  text-align: center;
+}
+.genre_chk {
+  position: absolute;
+  width: 400px; height: 400px; border-radius: 12px;
+  top: 30%;
+  left: 52%;
+  background-color: rgba(240, 240, 255, 0.5);
+}
+
+.work_chk {
+  position: absolute; 
+  width: 400px; height: 400px; border-radius: 12px;
+  top: 30%;
+  left: 23.5%;
+  background-color: rgba(240, 240, 255, 0.5);
+}
+
+/* 체크박스 디자인 및 여백 조절*/ 
+.chkbox1,.chkbox2 {
+  width: 400px; height: 340px; background-color: #fff;
+  display: flex; flex-direction: column; 
+  align-items: center;
+}
+
+.chkbox1>input ,.chkbox2>input {
+}
+
+
+.footer-btn {
+  position: absolute;
+  width: 500px; height: 100px;
+  top: 75%; left: 50%; transform: translate(-50%, -50%);
+}
+
+#match-btn, #back-btn {
+  font-size: 22px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.626);
+  color: #fff;
+  position: relative;
+  left: 15%; 
+  width: 150px; height: 70px;
+  outline: 1px;
+  border-radius: 100px;
+}
+#match-btn:hover #back-btn:hover {
+  background-color: rgb(255, 5, 5);
+}

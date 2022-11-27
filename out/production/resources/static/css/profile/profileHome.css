@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap'); /* 폰트 불러오기 */
+
+*{
+  font-family: 'Noto Sans KR', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  border-collapse: collapse;
+  margin:0px;
+  padding:0px;
+  color: #000;
+}
+
+.wrap {
+  position: relative;
+}
+
+.intro_bg{
+  width:100%;
+  height: 1000px;
+  background-image: url(img/background3.jpg);
+  background-attachment: fixed;
+}
+
+.logo_text { z-index: 20; /* header보다 위로 올라오게 함 */
+  width:30%;  height:100px;
+  margin-top: 30px;
+}
+
+.logo_text > h2 {
+  position: fixed;
+  color: rgb(0, 0, 0);
+  font-family: 'Righteous', cursive; font-size: 30px;
+  cursor: pointer;
+
+}
+
+.logo_text > h2:hover {
+  color: rgb(184, 17, 184);
+  transition: 0.3s;
+}
+.logo_text > h2:not(:hover) {
+  color: rgb(0, 0, 0);
+  transition: 0.3s;
+}
+
+.header{
+  z-index: 10;
+  display: flex;
+  width: 1300px;
+  margin:auto;
+  height: 86px;
+}
+
+.nav {
+  z-index: 10;
+  display: flex;
+  position: fixed;  /* 상단바 고정 */
+  padding-left: 15%;  /* 왼쪽 패딩 조정 */
+  justify-content: flex-end;
+  line-height: 86px;
+  width:calc(1300px - 300px);
+}
+.nav > li{
+  margin-left: 80px;
+}
+.nav > li > a{
+  color : rgb(0, 0, 0);
+}
+.nav > li > a:hover {
+  color: rgb(178, 122, 178);
+  transition: 0.3s;
+}
+.nav > li > a:not(:hover) {
+  color: rgb(0, 0, 0);
+  transition: 0.3s;
+}
+
+.profile_img {
+  text-align: center;
+  width: 300px; height: 250px;
+  position: absolute; top: 35%; left: 40%;
+  transform: translate(-50%, -50%);
+}
+.profile_img img {
+  width: 250px; height: 250px; border-radius: 100%;
+}
+
+.modify_profile {
+  text-align: center;
+  width: 250px; height: 100px; background-color: aqua;
+  position: absolute; top: 55%; left: 40%;   
+  transform: translate(-50%, -50%);
+}
+
+.modify_profile button {
+  width: 120px; height: 50px; 
+  position: relative; 
+}
+
+.username {
+  text-align: center; font-size: 22px;
+  width: 350px; height: 110px; 
+  line-height: 135px;
+  position: absolute; top:30%; left: 60%;
+  transform: translate(-50%, -50%);
+  border-bottom: 1px solid violet;
+}
+
+.introduce {
+  text-align: left;
+  width: 350px; height: 230px;
+  position: absolute; top:49%; left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.work {
+  text-align: center;
+  width: 350px; height: 100px; background-color: rgb(204, 176, 142);
+  position: absolute; top:80%; left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.preview_img {
+  text-align: center;
+  width: 350px; height: 640px;
+  position: absolute; top: 125%; left: 35%;
+  transform: translate(-50%, -50%);
+}
+.preview_img img {
+  border-radius: 30%; position:relative;
+  width:200px;  margin-bottom: 20px;
+  height:200px;
+}
+
+.preview_post {
+  text-align: left;
+  width: 650px; height: 640px;
+  position: absolute; top: 125%; left: 65%;
+  transform: translate(-50%, -50%);
+}
+.preview_post1 {
+  position: absolute; top: 75px;
+
+  }
+
+.preview_post2 {
+  position: absolute; top: 300px;
+}

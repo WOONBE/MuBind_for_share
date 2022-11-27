@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/matching/matchingHome.css">
+  <script src="matching.js"></script>
+  <title>매칭 상세 페이지</title>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="intro_bg">
+      <div class="header">
+        <div class="logo_text">
+          <h2>MUBIND</h2>
+        </div>
+        <ul class="nav">
+          <li><a href="matchingHome.html">MATCHING</a></li>
+          <li><a href="../board/boardList.html">POST</a></li>
+          <li><a href="../profile/profile.html">PROFILE</a></li>
+          <li><a href="../login/loginMain.html">LOGIN</a></li>
+        </ul>
+      </div>
+
+
+      <h1> 매칭될 상대를 선택하세요. </h1>
+      <div class="genre_chk">
+        <h2>선호 장르</h2>
+        <div class="chkbox1">
+          <input type="checkbox" name="check1" onclick="count_check(this);" id="classic"><label
+            for="classic"><span>클래식</span></label>
+          <input type="checkbox" name="check1" onclick="count_check(this);" id="jazz"><label
+            for="jazz"><span>재즈</span></label>
+          <input type="checkbox" name="check1" onclick="count_check(this);" id="hiphop"><label
+            for="hiphop"><span>힙합</span></label>
+          <input type="checkbox" name="check1" onclick="count_check(this);" id="popular-music"><label
+            for="popular-music"><span>대중음악</span></label>
+          <input type="checkbox" name="check1" onclick="count_check(this);" id="rock"><label
+            for="rock"><span>락</span></label>
+          <input type="checkbox" name="check1" onclick="count_check(this);" id="electronic-music"><label
+            for="electronic-music"><span>전자음악</span></label>
+          <input type="checkbox" name="check1" onclick="count_check(this);" id="trot"><label
+            for="trot"><span>트로트</span></label>
+          <input type="checkbox" name="check1" onclick="count_check(this);" id="etc-gerne"><label
+            for="etc-gerne"><span>기타 장르</span></label>
+        </div>
+      </div>
+      <div class="work_chk">
+        <h2>종사 분야</h2>
+        <div class="chkbox2">
+          <input type="checkbox" name="check2" onclick="count_check2(this);" id="composition"><label
+            for="composition"><span>작곡</span></label>
+          <input type="checkbox" name="check2" onclick="count_check2(this);" id="Lyric"><label
+            for="Lyric"><span>작사</span></label>
+          <input type="checkbox" name="check2" onclick="count_check2(this);" id="vocal"><label
+            for="vocal"><span>보컬</span></label>
+          <input type="checkbox" name="check2" onclick="count_check2(this);" id="guitar"><label
+            for="guitar"><span>통기타/일렉기타</span></label>
+          <input type="checkbox" name="check2" onclick="count_check2(this);" id="bass"><label
+            for="bass"><span>베이스</span></label>
+          <input type="checkbox" name="check2" onclick="count_check2(this);" id="drum"><label
+            for="drum"><span>드럼/타악기</span></label>
+          <input type="checkbox" name="check2" onclick="count_check2(this);" id="keyboard"><label
+            for="keyboard"><span>건반</span></label>
+          <input type="checkbox" name="check2" onclick="count_check2(this);" id="mastering"><label
+            for="mastering"><span>믹싱/마스터링</span></label>
+          <input type="checkbox" name="check2" onclick="count_check2(this);" id="record"><label
+            for="record"><span>음반</span></label>
+          <input type="checkbox" name="check2" onclick="count_check2(this);" id="etc-work"><label
+            for="etc-work"><span>기타 작업</span></label>
+        </div>
+      </div>
+      <div class="footer-btn">
+        <a href="/matching/matchingSuccess"><button type="submit" id="match-btn" onclick="match();">Matching!</button></a>
+        <a href="/matching"><button type="button" id="back-btn">뒤로</button></a>
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+</body>
+
+</html>

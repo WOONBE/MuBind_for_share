@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시글 상세 페이지</title>
+  <link rel="stylesheet" href="/css/board/boardView.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="logo_text">
+      <h2>MUBIND</h2>
+    </div>
+    <ul class="nav">
+      <li><a href="#">MATCHING</a></li>
+      <li><a href="#">POST</a></li>
+      <li><a href="#">PROFILE</a></li>
+      <li><a href="#">LOGIN</a></li>
+    </ul>
+  </div>
+  <table class="thead_area">
+    <tr class="thead">
+      <th>
+        <div><img id="edit_img" src="img/테스트이미지.png"></div>
+      </th>
+      <th><select id="category">
+          <option>작업물</option>
+          <option>4</option>
+          <option>5물</option>
+        </select></th>
+      <th><h3 id="post_title">제목 칸입니다.</th>
+    </tr>
+  </table>
+  <table class="tbody">
+    <tr>
+      <td colspan="2" height=400>
+        <h5 class="edit_cont">내용 칸입니다! 여기에 컨텐츠가 추가됩니다. 각종 하이퍼링크를 달 수도 있고, 하고 싶은 얘기를 마음껏 하셔도 상관없습니다! 다들 조금만 고생해주세요!</h5>
+      </td>
+    </tr>
+    <tr class="submit_option">
+      <td colspan="2" align=right>
+        <input type="button" id="submit_btn" value="수정하기">
+        <input type="button" id="back_btn"value="목록으로">
+      </td>
+    </tr>
+  </table>
+  </div>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="bulletin_view.js"></script>
+</body>
+
+</html>
