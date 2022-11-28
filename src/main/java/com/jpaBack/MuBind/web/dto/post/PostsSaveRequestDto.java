@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+//게시판 저장 dto
 @Getter
 @NoArgsConstructor
 public class PostsSaveRequestDto {

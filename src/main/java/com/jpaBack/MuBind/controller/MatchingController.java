@@ -22,12 +22,14 @@ public class MatchingController {
     private final MatchingRepository matchingRepository;
     private final UserService userService;
 
+    //매칭홈 리턴
     @GetMapping("/matching")
     public String matchingHome(){
 
         return "/views/matching/matchingHome";
     }
 
+    //매칭창 리턴
     @GetMapping("/matching/matchingView")
     public String matchingView(){
         return "views/matching/matchingView";
@@ -36,7 +38,7 @@ public class MatchingController {
 
 
 
-    //매칭 버튼 누를때 장르로 찾기 기능 사용
+    //매칭창 클릭시 매칭 성공창 리턴, 매칭 버튼 누를때 장르로 찾기 기능 사용
     @GetMapping("/matching/matchingSuccess")
     public String matchingSuccess() {
 //        List<User> userGenre = matchingRepository.findByGenre(genre);

@@ -6,6 +6,7 @@ import lombok.Setter;
 
 import java.util.List;
 
+//유저 프로필 창 dto
 @Getter
 @Setter
 @NoArgsConstructor

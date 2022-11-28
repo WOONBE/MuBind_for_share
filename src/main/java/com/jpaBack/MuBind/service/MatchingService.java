@@ -17,6 +17,7 @@ public class MatchingService {
 
     private final MatchingRepository matchingRepository;
 
+    //매칭 기
     @Transactional
     public List<User> matching(Long id, User user, String genre){
         List<User> matchingUser = matchingRepository.findByGenre(genre);
@@ -25,14 +26,17 @@ public class MatchingService {
 
     }
 
+    //매칭 조회
     public List<User> findMatching(){
         return matchingRepository.findAll();
     }
 
+    //아이디로 매칭 조회
     public User findOne(Long matchingID){
         return matchingRepository.findOne(matchingID);
     }
 
+    //매칭 업데이트
     @Transactional
     public void updateMatching(Long id, String name, String genre){
         User user = (User) matchingRepository.findByGenre(genre);

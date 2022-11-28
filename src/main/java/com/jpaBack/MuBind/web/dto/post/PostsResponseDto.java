@@ -3,6 +3,7 @@ package com.jpaBack.MuBind.web.dto.post;
 import com.jpaBack.MuBind.domain.posts.Posts;
 import lombok.Getter;
 
+//게시판 반응 dto
 @Getter
 public class PostsResponseDto {
 

@@ -21,11 +21,13 @@ public class IndexController {
     private final PostsService postsService;
     private final HttpSession httpSession;
 
-    //게시판 메인 주소 리턴
+    //메인 주소 리턴
     @GetMapping("/")
     public String home() {
         return "/views/matching/matchingHome";
     }
+
+    //게시판 메인주소 리턴
         @GetMapping("/posts")
         public String index(Model model, @LoginUser SessionUser user) {
             model.addAttribute("posts", postsService.findAllDesc());
